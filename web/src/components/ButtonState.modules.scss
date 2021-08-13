@@ -1,0 +1,33 @@
+
+@mixin flex-center {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    border-radius: 50%;
+}
+
+.test-outer {
+    @include flex-center();
+
+    width: 100px;
+    height: 100px;
+
+    .test-inner {
+        @include flex-center();
+        cursor: pointer;
+        width: 70%;
+        height: 70%;
+        z-index: 1;
+    }
+
+    &.is-active {
+        border: 1px #f00 solid;
+        .test-inner {
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.App {
+  position: relative;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+
+  .error {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+    color: #F00;
+  }
+
+  .control-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button-reset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: #fff;
+
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+  }
+
+  button {
+    * {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 40p;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
